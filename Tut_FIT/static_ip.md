@@ -25,12 +25,15 @@ grep -iH IFACE_NAME *.*
 sudo nano 00-installer-config.yaml
 ```
 
+## get the DNS server ip
+nslookup www.google.com | grep server
+
 ## config
 ```
 network:
   ethernets:
     eth0:
-      dhcp4: no
+    dhcp4: no
       addresses:
         - 172.19.215.19/20
       gateway4: 192.168.108.1

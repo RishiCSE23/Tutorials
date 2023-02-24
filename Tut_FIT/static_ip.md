@@ -26,7 +26,9 @@ sudo nano 00-installer-config.yaml
 ```
 
 ## get the DNS server ip
+```
 nslookup www.google.com | grep server
+```
 
 ## config
 ```
